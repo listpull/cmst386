@@ -66,7 +66,7 @@ nav a:hover, .subnav:hover .subnavbtn {
   display: none;
   position: absolute;
   left: 0;
-  background-color: get;
+  background-color: grey;
   width: 100%;
   z-index: 1;
 }
@@ -78,8 +78,8 @@ nav a:hover, .subnav:hover .subnavbtn {
 }
 
 .subnav-content a:hover {
-  background-color: blue;
-  color: black;
+  background-color: white;
+  color: blue;
 }
 
 .subnav:hover .subnav-content {
