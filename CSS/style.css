@@ -52,7 +52,8 @@ nav a{
   outline: none;
   color: black;
   padding: 14px 16px;
-  background-color: inherit;
+  background-color: white;
+  margin: 10px;
   font-family: inherit;
   margin: 0;
 }
