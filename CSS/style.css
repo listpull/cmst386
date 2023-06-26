@@ -60,11 +60,11 @@ nav ul ul ul li {
     left: 100%;
 }
 
-nav > ul > li:nth-child(2).has-submenu > a:after {
+nav > ul > li:nth-child(2) > a:after {
     content: ' ▼';
 }
 
-nav > ul > li:nth-child(2).has-submenu > a:after {
+nav > ul > li:nth-child(2) > a:after {
     content: ' ▲';
 }
 
