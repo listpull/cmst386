@@ -38,3 +38,12 @@ footer,nav {
     margin: 0 auto;
     max-width: 90%;
 }
+
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+          .larger-image {
+        max-width: 600px;
+    }
