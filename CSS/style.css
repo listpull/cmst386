@@ -72,10 +72,10 @@ nav ul {
 }
 .nav > li:hover, 
 .nav > li:hover > a { 
-  border-bottom-color: orange;
+  border-bottom-color: blue;
 }
 .nav li:hover > a { 
-  color:orange; 
+  color:blue; 
 }
 .nav > li:first-child { 
   border-radius: 4px 0 0 4px;
@@ -96,7 +96,7 @@ nav ul {
 .nav ul {
   position: absolute;
   white-space: nowrap;
-  border-bottom: 5px solid  orange;
+  border-bottom: 5px solid  blue;
   z-index: 1;
   left: -99999em;
 }
@@ -116,7 +116,7 @@ nav ul {
 }
 .nav > li:hover > a:first-child:nth-last-child(2):before {
   border: 5px solid transparent; 
-  border-bottom-color: orange; 
+  border-bottom-color: blue; 
   margin-top:-5px
 }
 .nav li li > a:first-child:nth-last-child(2):before {  
@@ -125,7 +125,7 @@ nav ul {
 }
 .nav li li:hover > a:first-child:nth-last-child(2):before {
   border: 5px solid transparent; 
-  border-right-color: orange;
+  border-right-color: blue;
   right: 10px; 
 }
 
