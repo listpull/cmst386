@@ -62,7 +62,7 @@ nav ul ul ul li {
 
 
 
-nav ul li.has-submenu > a:after {
+li a:first-child:nth-last-child(x) :after {
     content: ' ▼';
 }
 
