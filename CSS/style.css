@@ -32,13 +32,17 @@ a:hover {
 }
 
 /* Section Styles */
-footer,nav {
+footer,nav, section {
     background-color: #fff;
     padding: 20px;
     margin: 0 auto;
     max-width: 90%;
 }
-
+footer {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+}
         .thumbnail {
             width: 100px;
             height: 100px;
