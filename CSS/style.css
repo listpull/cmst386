@@ -62,7 +62,7 @@ nav ul ul ul li {
 
 
 
-li a:first-child:nth-last-child(2) a:after {
+li a:first-child:nth-last-child(1) a:after {
     content: ' ▼';
 }
 
