@@ -35,12 +35,12 @@ a:hover {
 nav, section {
     background-color: #fff;
     padding: 20px;
-    margin: 10 auto;
+    margin: 10px auto;
     max-width: 90%;
 }
 footer {
     padding: 20px;
-    margin: 10 auto;
+    margin: 10px auto;
     max-width: 90%;
 }
 .thumbnail {
