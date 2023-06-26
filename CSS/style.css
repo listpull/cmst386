@@ -28,87 +28,66 @@ a:hover {
 }
 
 /* Navigation Styles */
-nav {    
-  display: block;
-  text-align: center;
-}
 nav ul {
-  margin: 0;
-  padding:0;
-  list-style: none;
+    position: relative;
 }
-nav a {
-  display:block; 
-  background: #111; 
-  color: #fff; 
-  text-decoration: none;
-  padding: 0.8em 1.8em;
-  text-transform: uppercase;
-  font-size: 80%;
-  letter-spacing: 2px;
-  text-shadow: 0 -1px 0 #000;
-  position: relative;
+
+nav ul li {
+    display: inline-block;
 }
-nav{  
-  vertical-align: top; 
-  display: inline-block;
-  box-shadow: 
-    1px -1px -1px 1px #000, 
-    -1px 1px -1px 1px #fff, 
-    0 0 6px 3px #fff;
-  border-radius:6px;
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
 }
-nav li {
-  position: relative;
+
+nav ul li:hover > ul {
+    display: inherit;
 }
-nav > li { 
-  float: left; 
-  border-bottom: 4px #aaa solid; 
-  margin-right: 1px; 
-} 
-nav > li > a { 
-  margin-bottom: 1px;
-  box-shadow: inset 0 2em .33em -0.5em #555; 
+
+nav ul ul li {
+    width: 100%;
+    display: list-item;
+    position: relative;
 }
-nav > li:hover, 
-nav > li:hover > a { 
-  border-bottom-color: blue;
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 100%;
 }
-nav li:hover > a { 
-  color:blue; 
+
+nav ul li > a:after {
+    content: ' ▼';
 }
-nav > li:first-child { 
-  border-radius: 4px 0 0 4px;
-} 
-nav > li:first-child > a { 
-  border-radius: 4px 0 0 0;
+
+nav ul li.has-submenu > a:after {
+    content: ' ▲';
 }
-nav > li:last-child { 
-  border-radius: 0 0 4px 0; 
-  margin-right: 0;
-} 
-nav > li:last-child > a { 
-  border-radius: 0 4px 0 0;
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
 }
-nav li li a { 
-  margin-top: 1px;
+
+nav ul ul li a {
+    padding: 10px 30px;
 }
-nav ul {
-  position: absolute;
-  white-space: nowrap;
-  border-bottom: 5px solid  blue;
-  z-index: 1;
-  left: -99999em;
+
+nav ul ul ul li a {
+    padding: 10px 40px;
 }
-nav > li:hover > ul {
-  left: auto;
-  margin-top: 5px;
-  min-width: 100%;
+
+nav ul ul li a:hover {
+    background-color: #ddd;
 }
-nav > li li:hover > ul { 
-  left: 100%;
-  margin-left: 1px;
-  top: -1px;
+
+nav ul li:hover > a {
+    color: #007bff;
 }
 /* arrow hover styling */
 nav > li > a:first-child:nth-last-child(2):before { 
