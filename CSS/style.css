@@ -60,12 +60,10 @@ nav ul ul ul li {
     left: 100%;
 }
 
-nav ul li > a:after {
-    content: ' ▼';
-}
+
 
 nav ul li.has-submenu > a:after {
-    content: ' ▲';
+    content: ' ▼';
 }
 
 nav ul li a {
