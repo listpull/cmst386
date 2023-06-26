@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     min-width: 630px;
+    background-color: #f2f2f2;
 }
 
 h1 {
@@ -31,8 +32,8 @@ a:hover {
 }
 
 /* Section Styles */
-section {
-    background-color: #f2f2f2;
+footer,nav {
+    background-color: #000;
     padding: 20px;
     margin: 0 auto;
     max-width: 600px;
