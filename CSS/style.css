@@ -35,7 +35,7 @@ a:hover {
 footer,nav, section {
     background-color: #fff;
     padding: 20px;
-    margin: 0 auto;
+    margin: 0 10;
     max-width: 90%;
 }
 footer {
@@ -43,11 +43,11 @@ footer {
     margin: 0 auto;
     max-width: 90%;
 }
-        .thumbnail {
-            width: 100px;
-            height: 100px;
-            margin: 5px;
-        }
-          .larger-image {
-        max-width: 600px;
-    }
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.larger-image {
+    max-width: 600px;
+}
