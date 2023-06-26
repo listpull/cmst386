@@ -45,9 +45,21 @@ footer {
 }
 .thumbnail {
     width: 100px;
-    height: 100px;
     margin: 5px;
 }
 .larger-image {
     max-width: 600px;
+}
+
+.grid {
+    -webkit-column-count: auto;
+    grid-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    height: -webkit-max-content;
+    height: max-content;
+    -webkit-column-width: 300px;
+    columns: 300px;
+    margin: auto;
+    width: 90%;
 }
