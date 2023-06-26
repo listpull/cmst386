@@ -60,6 +60,14 @@ nav ul ul ul li {
     left: 100%;
 }
 
+nav ul li > a:after {
+    content: ' ▼';
+}
+
+nav ul li.has-submenu > a:after {
+    content: ' ▲';
+}
+
 nav ul li a {
     display: block;
     padding: 10px 20px;
@@ -80,16 +88,6 @@ nav ul ul li a:hover {
 
 nav ul li:hover > a {
     color: #007bff;
-}
-
-nav ul li:hover > a:before {
-    content: '▲';
-    float: right;
-}
-
-nav ul li a:before {
-    content: '▼';
-    float: right;
 }
 
 /* Section Styles */
