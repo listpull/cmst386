@@ -61,12 +61,10 @@ nav ul ul ul li {
 }
 
 nav > ul > li:nth-child(2) > a:after {
-    content: ' ▼';
+    content: ' -';
 }
 
-nav > ul > li:nth-child(2) > a:after {
-    content: ' ▲';
-}
+
 
 nav ul li a {
     display: block;
