@@ -190,9 +190,6 @@ ul.breadcrumb li a:hover {
     .column {
         flex-basis: 100%;
     }
-  .mobile-menu {
-    display: block;
-  }
   
   .navbar {
     display: flex;
