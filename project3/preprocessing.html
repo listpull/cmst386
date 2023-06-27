@@ -56,11 +56,16 @@
 			    </style>
 			</section>
 		</main>
-		<footer id="footer"  class="center"><p>Copyright © 2023 Jay Monga</p></footer>
+		<footer id="footer"  class="center"><p>&copy; <span id="currentDateTime"></span> Jay Monga. All rights reserved.</p></footer>
 		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 			
 		<!-- Javascript -->
 		<script>
+			// Get the current date and time
+			var currentDateTime = new Date().toLocaleString();
+			
+			// Set the current date and time in the footer
+			document.getElementById("currentDateTime").textContent = currentDateTime;
 			function myFunction() {
 			  var x = document.getElementById("mobile-menu");
 			  if (x.style.display === "block") {
