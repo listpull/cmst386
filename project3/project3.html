@@ -44,40 +44,45 @@
 
 	</section>
 	</main>
-	<footer id="footer"  class="center"><p>Copyright © 2023 Jay Monga</p></footer>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-	<!-- Javascript -->
-	<script>
-		function myFunction() {
-		  var x = document.getElementById("mobile-menu");
-		  if (x.style.display === "block") {
-		    x.style.display = "none";
-		  } else {
-		    x.style.display = "block";
-		  }
-		}
-
-		// Get the button
-		let mybutton = document.getElementById("myBtn");
-		
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-		
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		    mybutton.style.display = "block";
-		  } else {
-		    mybutton.style.display = "none";
-		  }
-		}
-		
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0;
-		  document.documentElement.scrollTop = 0;
-		}
-	</script>
+		<footer id="footer"  class="center"><p>&copy; <span id="currentDateTime"></span> Jay Monga. All rights reserved.</p></footer>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			
+		<!-- Javascript -->
+		<script>
+			// Get the current date and time
+			var currentDateTime = new Date().toLocaleString();
+			
+			// Set the current date and time in the footer
+			document.getElementById("currentDateTime").textContent = currentDateTime;
+			function myFunction() {
+			  var x = document.getElementById("mobile-menu");
+			  if (x.style.display === "block") {
+			    x.style.display = "none";
+			  } else {
+			    x.style.display = "block";
+			  }
+			}
+	
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+			
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+			
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
     </div>
 </body>
 </html>
