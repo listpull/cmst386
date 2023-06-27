@@ -70,8 +70,6 @@ nav a:hover, .subnav:hover .subnavbtn {
   background-color: grey;
   width: 100%;
   z-index: 1;
-    margin: 10px auto;
-    max-width: 90%;
 }
 
 .subnav-content a {
@@ -170,7 +168,9 @@ ul.breadcrumb li a:hover {
     padding: 10px;
     margin: 10px;
 }
-
+  .hamburger {
+    display: none;
+  }
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     /* Styles for tablet screens */
