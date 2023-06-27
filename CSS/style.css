@@ -168,22 +168,12 @@ ul.breadcrumb li a:hover {
     padding: 10px;
     margin: 10px;
 }
-@media (min-width: 769px) {
-  .hamburger {
-    display: none;
-  }
-}
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    /* Styles for tablet screens */
-    .grid {
-        flex-direction: column;
-    }
 
-    .column {
-        flex-basis: 100%;
-    }
+.hamburger , .mobile-menu {
+  display: none;
 }
+
+/* Media queries for responsive design */
 
 @media (max-width: 480px) {
     /* Styles for phone screens */
@@ -191,11 +181,15 @@ ul.breadcrumb li a:hover {
         font-size: 14px;
     }
 }
-.mobile-menu {
-  display: none;
-}
-
 @media (max-width: 768px) {
+        /* Styles for tablet screens */
+    .grid {
+        flex-direction: column;
+    }
+
+    .column {
+        flex-basis: 100%;
+    }
   .mobile-menu {
     display: block;
   }
