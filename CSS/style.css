@@ -168,9 +168,11 @@ ul.breadcrumb li a:hover {
     padding: 10px;
     margin: 10px;
 }
+@media (min-width: 769px) {
   .hamburger {
     display: none;
   }
+}
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     /* Styles for tablet screens */
