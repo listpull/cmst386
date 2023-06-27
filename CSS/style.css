@@ -70,6 +70,8 @@ nav a:hover, .subnav:hover .subnavbtn {
   background-color: grey;
   width: 100%;
   z-index: 1;
+    margin: 10px auto;
+    max-width: 90%;
 }
 
 .subnav-content a {
@@ -136,6 +138,8 @@ ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: #eee;
+    margin: 10px auto;
+    max-width: 90%;
 }
 ul.breadcrumb li {
   display: inline;
