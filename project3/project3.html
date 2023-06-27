@@ -16,9 +16,11 @@
 	  <div class="navbar">
 	    <a href="/cmst386/">Home</a>
 	    <a href="/cmst386/project3/project3.html">Project 3</a>
-	    <button class="hamburger">&#9776;</button>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="hamburger">&#9776;</i>
+	  </a>
 	  </div>
-	  <div class="mobile-menu">
+	  <div class="mobile-menu" id="mobile-menu">
 	    <a href="/cmst386/">Home</a>
 	    <a href="/cmst386/project3/project3.html">Project 3</a>
 	  </div>
@@ -43,7 +45,14 @@
 	</section>
 	</main>
 	<footer id="footer"  class="center"><p>Copyright © 2023 Jay Monga</p></footer>
-
+	<script>function myFunction() {
+	  var x = document.getElementById("mobile-menu");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}</script>
     </div>
 </body>
 </html>
